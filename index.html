@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actors Access Master Guide</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-dark: #121212;
+            --text-light: #ffffff;
+            --text-dark: #000000;
+            --green-main: #10b981;
+            --green-hover: #059669;
+            --blue-main: #3b82f6;
+            --blue-hover: #2563eb;
+            --red-main: #ef4444;
+            --red-hover: #dc2626;
+            --gold-main: #f59e0b;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 10px;
+            line-height: 1.4;
+        }
+
+        h1 {
+            font-size: 1.5rem;
+            margin: 0 0 10px 0;
+            text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        @keyframes slowBlink {
+            0% { opacity: 1; background-color: var(--gold-main); }
+            50% { opacity: 0.7; background-color: #d97706; }
+            100% { opacity: 1; background-color: var(--gold-main); }
+        }
+
+        @keyframes sparkle-glow {
+            0% { box-shadow: 0 0 4px #ffd700, 0 0 10px #ffdf00; border: 1px solid #ffd700; }
+            50% { box-shadow: 0 0 12px #fff, 0 0 20px #ffd700; border: 1px solid #fff; }
+            100% { box-shadow: 0 0 4px #ffd700, 0 0 10px #ffdf00; border: 1px solid #ffd700; }
+        }
+
+        .golden-rule {
+            background-color: var(--gold-main);
+            color: var(--text-dark);
+            padding: 12px;
+            border-radius: 8px;
+            font-weight: 800;
+            text-align: center;
+            margin-bottom: 15px;
+            font-size: 0.95rem;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            animation: slowBlink 3s infinite ease-in-out;
+        }
+
+        .section-header {
+            font-size: 1.2rem;
+            font-weight: 800;
+            margin: 15px 0 10px 0;
+            text-transform: uppercase;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+
+        /* Accordion Styles */
+        details {
+            border-radius: 6px;
+            overflow: hidden;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+            transition: all 0.2s ease;
+        }
+
+        summary {
+            padding: 10px 12px;
+            font-weight: 800;
+            font-size: 1rem;
+            cursor: pointer;
+            list-style: none; /* Hide default arrow */
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--text-light);
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+        }
+
+        summary::after {
+            content: '+';
+            font-size: 1.2rem;
+            font-weight: 400;
+            line-height: 1;
+        }
+
+        details[open] summary::after {
+            content: '−';
+        }
+
+        .content {
+            padding: 10px 12px;
+            font-size: 0.9rem;
+            background-color: #ffffff;
+            color: #000000;
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+        }
+
+        .goal {
+            margin-top: 8px;
+            font-weight: 600;
+            text-transform: uppercase;
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        /* Color Blocks */
+        .block-green, .block-blue {
+            animation: sparkle-glow 2.5s infinite alternate;
+            margin-bottom: 4px;
+        }
+        .block-green summary { background-color: var(--green-main); }
+        .block-green summary:hover { background-color: var(--green-hover); }
+
+        .block-blue summary { background-color: var(--blue-main); }
+        .block-blue summary:hover { background-color: var(--blue-hover); }
+
+        .block-red summary { background-color: var(--red-main); }
+        .block-red summary:hover { background-color: var(--red-hover); }
+
+        @media (max-width: 600px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Actors Access Guide</h1>
+
+    <div class="golden-rule">
+        ⚠️ RULE: IF THE TITLE SAYS "BACKGROUND", "EXTRAS", OR "STAND-IN", DO NOT SUBMIT.
+    </div>
+
+    <div class="section-header" style="color: var(--green-main);">🎬 The Reel Builders (Target)</div>
+    
+    <div class="grid-container">
+        <details class="block-green">
+            <summary><span style="flex-grow: 1;">📺 Episodic</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                Scripted TV shows. This is where you hunt for Co-Star (1-5 lines) or Guest Star (heavy scene) roles.
+                <div class="goal">Goal: Network credits & professional tier footage.</div>
+            </div>
+        </details>
+
+        <details class="block-green">
+            <summary><span style="flex-grow: 1;">🎥 Feature Film</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                Full-length movies. Non-union features are a great place to book "Day Player" roles with 2-3 solid lines of dialogue.
+                <div class="goal">Goal: Day player credits & quick dialogue clips.</div>
+            </div>
+        </details>
+
+        <details class="block-blue">
+            <summary><span style="flex-grow: 1;">🚀 Pilot<br>Presentation</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                First episode or short proof-of-concept pitches for networks. Often lower budget, but they cast strong actors to sell the concept.
+                <div class="goal">Goal: Ground floor opportunities.</div>
+            </div>
+        </details>
+
+        <details class="block-green">
+            <summary><span style="flex-grow: 1;">🎞️ Short Film</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                Independent short stories. Easiest place to book Lead roles that give you 5-10 minutes of heavy dialogue.
+                <div class="goal">Goal: Gritty, dramatic reel footage.</div>
+            </div>
+        </details>
+
+        <details class="block-green">
+            <summary><span style="flex-grow: 1;">🎓 Student Film</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                University projects (USC, AFI, NYU). Often shot on cinema-quality cameras. You can easily book the "Adult" Lead role.
+                <div class="goal">Goal: Cinematic reel footage.</div>
+            </div>
+        </details>
+
+        <details class="block-blue">
+            <summary><span style="flex-grow: 1;">📱 Vertical Short Form</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                Scripted series made for apps like ReelShort. Great for booking fast, dramatic Day Player roles.
+                <div class="goal">Goal: Quick dialogue and archetype building.</div>
+            </div>
+        </details>
+
+        <details class="block-blue">
+            <summary><span style="flex-grow: 1;">💻 Web Series</span> <span style="margin-right: 15px;">✅</span></summary>
+            <div class="content">
+                Scripted episodic content made for the web (YouTube, Vimeo). Great places to book speaking roles and get indie credits.
+                <div class="goal">Goal: Scripted dialogue and indie credits.</div>
+            </div>
+        </details>
+    </div>
+
+    <div class="section-header" style="color: var(--red-main);">🛑 The Distractions (Skip)</div>
+
+    <div class="grid-container">
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">📸 Ad Campaign</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Print or video brand campaigns. Same as commercials, these provide no theatrical reel footage and should be handled by your agent.
+                <div class="goal">Reason: Agency overlap & no theatrical value.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">💵 Commercial</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                <strong>Let Aqua handle this!</strong> Your agency is actively submitting you for these. Self-submitting risks agency conflict.
+                <div class="goal">Reason: Agency overlap & no theatrical value.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🌍 Documentary</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Real-world interviews or historical reenactments. Even reenactments are rarely usable for a strong acting reel.
+                <div class="goal">Reason: Rarely usable for dramatic reels.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🏢 Industrial</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Internal corporate training videos. Often dry, highly corporate, and rarely released publicly for you to get footage.
+                <div class="goal">Reason: Boring footage, hard to obtain.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🎪 Live Project</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Theme park performers, haunted houses, or interactive live events. 
+                <div class="goal">Reason: Zero on-camera footage.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🎵 Music Video</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Almost entirely non-speaking or pantomime acting to music. They look visually cool, but lack dialogue.
+                <div class="goal">Reason: No dialogue = No reel value.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🎙️ Podcast</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Strictly audio-based roles. Great for a voiceover reel, but provides absolutely zero visual footage for theatrical casting.
+                <div class="goal">Reason: Zero on-camera footage.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">📣 Promo</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Promotional videos or sizzle reels for products/brands. Like commercials, these should be handled by your agent and provide no acting footage.
+                <div class="goal">Reason: Agency overlap & no theatrical value.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🗣️ Reality</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Unscripted formats, game shows, or dating shows. Casting directors for scripted TV and Film do not care about reality credits.
+                <div class="goal">Reason: Not acting. Cannot be used on a reel.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">✨ Special</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                One-off television events (like holiday specials or live events). Often unscripted reality or variety formats that provide zero dramatic footage.
+                <div class="goal">Reason: Rarely scripted acting. No reel value.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🎭 Theatre</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Stage plays. A completely different skill set that does not translate to on-camera film/TV casting.
+                <div class="goal">Reason: Zero on-camera footage.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🎮 Video Game</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Usually Voiceover or Face Scans. Excellent for money, but provides no usable dramatic on-camera footage.
+                <div class="goal">Reason: No on-camera acting footage.</div>
+            </div>
+        </details>
+
+        <details class="block-red">
+            <summary><span style="flex-grow: 1;">🛠️ Workshop</span> <span style="margin-right: 15px;">❌</span></summary>
+            <div class="content">
+                Developmental readings or rehearsals of a project in progress. Excellent for networking with writers/directors, but provides no on-camera footage.
+                <div class="goal">Reason: Zero on-camera footage.</div>
+            </div>
+        </details>
+    </div>
+
+</body>
+</html>
